@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/title"
+        android:layout_margin="10dp"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Image Upload Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:hint="ENter Image Name"
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/LinLay1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/choosebtn"
+            android:text="Choose Image"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/uploadbtn"
+            android:text="Upload Image"
+            android:layout_below="@+id/choosebtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/LinLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnImageList"
+            android:text="Image List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
